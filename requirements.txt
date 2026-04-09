@@ -1,0 +1,32 @@
+# ---------------------------------------------------------------------------
+# 建议安装顺序（在项目根目录、已创建并激活 venv 后）：
+#
+# 1) PyTorch：按机器选择 CPU 或 GPU（CUDA 版本以官网为准）
+#    - 官网向导：https://pytorch.org/get-started/locally/
+#    - 示例（CUDA 12.x，Windows/Linux 常见写法，请按官网更新）：
+#        pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
+#    - 若仅 CPU：
+#        pip install torch torchvision
+#
+# 2) 其余依赖：
+#        pip install -r requirements.txt
+#
+# 若第 1 步已装好 torch/torchvision，也可直接 pip install -r requirements.txt
+# （会安装/校验下列包版本约束）。
+# ---------------------------------------------------------------------------
+
+torch>=2.0.0,<3
+torchvision>=0.15.0
+diffusers>=0.27.0
+transformers>=4.38.0
+accelerate>=0.26.0
+peft>=0.8.0
+safetensors>=0.4.0
+controlnet-aux>=0.0.7
+opencv-python>=4.8.0
+Pillow>=10.0.0
+numpy>=1.24.0
+tqdm>=4.65.0
+scikit-image>=0.22.0
+PyYAML>=6.0
+ipykernel>=6.0.0
