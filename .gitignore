@@ -1,0 +1,39 @@
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Project data & datasets (large / local)
+data/
+Nankai-Chinese-Font-Style-Dataset-master/
+
+# Training outputs & model weights (regenerate or download separately)
+outputs/
+checkpoints/
+*.ckpt
+*.pth
+*.pt
+*.safetensors
+*.bin
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE (optional local settings)
+.idea/
